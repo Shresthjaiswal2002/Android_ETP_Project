@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Program_Transfer_Management"
+        tools:targetApi="31" >
+        <activity
+            android:name=".chapter1viewpdf"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_questions"
+            android:exported="false" />
+        <activity
+            android:name=".quizmain"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".schapter4"
+            android:exported="false" />
+        <activity
+            android:name=".schapter3"
+            android:exported="false" />
+        <activity
+            android:name=".schapter2"
+            android:exported="false" />
+        <activity
+            android:name=".schapter1"
+            android:exported="false" />
+        <activity
+            android:name=".Science"
+            android:exported="false" />
+        <activity
+            android:name=".mchapter4"
+            android:exported="false" />
+        <activity
+            android:name=".mchapter3"
+            android:exported="false" />
+        <activity
+            android:name=".mchapter2"
+            android:exported="false" />
+        <activity
+            android:name=".mchapter1"
+            android:exported="false" />
+        <activity
+            android:name=".Maths"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".echapter4"
+            android:exported="false" />
+        <activity
+            android:name=".echapter3"
+            android:exported="false" />
+        <activity
+            android:name=".echapter2"
+            android:exported="false" />
+        <activity
+            android:name=".echapter1"
+            android:exported="false" />
+        <activity
+            android:name=".English"
+            android:exported="false" />
+        <activity
+            android:name=".hchapter4"
+            android:exported="false" />
+        <activity
+            android:name=".hchapter3"
+            android:exported="false" />
+        <activity
+            android:name=".hchapter2"
+            android:exported="false" />
+        <activity
+            android:name=".chapter1"
+            android:exported="false" />
+        <activity
+            android:name=".Hindi"
+            android:exported="false" />
+        <activity
+            android:name=".firstclass"
+            android:exported="false" />
+        <activity
+            android:name=".Class"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3_f"
+            android:exported="false" />
+        <activity
+            android:name=".bottom_navigation"
+            android:exported="false" />
+        <activity
+            android:name=".contactus"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".instructions"
+            android:exported="false" />
+        <activity
+            android:name=".programtransfer2"
+            android:exported="false" />
+        <activity
+            android:name=".programtransfer"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+    </application>
+
+</manifest>

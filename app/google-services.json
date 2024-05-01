@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338712363336",
+    "project_id": "study-material-app-fa82b",
+    "storage_bucket": "study-material-app-fa82b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338712363336:android:0d127990f078a05ec2f37d",
+        "android_client_info": {
+          "package_name": "com.example.program_transfer_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO_HI-3MbiICgIeCcvuFyK_wryCg642g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
