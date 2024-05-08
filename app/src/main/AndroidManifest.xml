@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCELEROMETER" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/studymaterial"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Program_Transfer_Management"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".NewTaskSheet"
+            android:exported="false" />
+        <activity
+            android:name=".TodoListMainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".hchapter4viewpdf"
+            android:exported="false" />
+        <activity
+            android:name=".hchapter3viewpdf"
+            android:exported="false" />
+        <activity
+            android:name=".hchapter2viewpdf"
+            android:exported="false" />
         <activity
             android:name=".chapter1viewpdf"
             android:exported="false" />
@@ -27,8 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".quizmain"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".SignInActivity"
             android:exported="false" />
@@ -67,12 +83,13 @@
             android:exported="false" />
         <activity
             android:name=".Splashscreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".echapter4"
@@ -118,8 +135,7 @@
             android:exported="false" />
         <activity
             android:name=".contactus"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".instructions"
             android:exported="false" />

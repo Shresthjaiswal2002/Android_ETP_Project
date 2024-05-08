@@ -13,8 +13,8 @@ class Signup : AppCompatActivity() {
     lateinit var button:Button
     lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
-         lateinit var binding: ActivitySignupBinding
-         lateinit var firebaseAuth: FirebaseAuth
+        lateinit var binding: ActivitySignupBinding
+        lateinit var firebaseAuth: FirebaseAuth
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
         button=findViewById(R.id.signupButton)

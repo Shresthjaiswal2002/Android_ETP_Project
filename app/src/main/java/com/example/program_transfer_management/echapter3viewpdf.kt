@@ -3,43 +3,34 @@ package com.example.program_transfer_management
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.WebView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.cardview.widget.CardView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
-class Class : AppCompatActivity() {
+class echapter3viewpdf : AppCompatActivity() {
+    private lateinit var bottom: BottomNavigationView
     private lateinit var auth: FirebaseAuth
-    lateinit var class1: CardView
-    lateinit var instructions1: CardView
-    lateinit var help: CardView
-    lateinit var progress: CardView
-    lateinit var bottom: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_class)
-        class1=findViewById(R.id.clothingCard)
-        instructions1=findViewById(R.id.instructions)
-        help=findViewById(R.id.help)
-        bottom=findViewById(R.id.btm)
-        progress=findViewById(R.id.progress)
-        class1.setOnClickListener{
-            val intent= Intent(this,firstclass::class.java)
+        setContentView(R.layout.activity_hchapter2viewpdf)
+        val viewVideosCardView: CardView = findViewById(R.id.progress)
+        val viewpdf: CardView = findViewById(R.id.help)
+        // Set OnClickListener for the CardView
+        viewpdf.setOnClickListener {
+            val intent = Intent(this, echapter3::class.java)
             startActivity(intent)
         }
-        instructions1.setOnClickListener {
-            val intent= Intent(this,firstclass::class.java)
-            startActivity(intent)
+        viewVideosCardView.setOnClickListener {
+            // Open YouTube using WebView
+            val webView = WebView(this)
+            setContentView(webView)
+            webView.loadUrl("https://www.youtube.com")
         }
-        help.setOnClickListener {
-            val intent= Intent(this,firstclass::class.java)
-            startActivity(intent)
-        }
-        progress.setOnClickListener {
-            val intent= Intent(this, firstclass::class.java)
-            startActivity(intent)
-        }
+    }
+    private fun setupNavigation() {
         bottom.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.firstcgpa -> {

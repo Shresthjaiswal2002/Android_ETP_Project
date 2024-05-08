@@ -23,7 +23,7 @@ class English : AppCompatActivity() {
         bottom=findViewById(R.id.btm)
         progress=findViewById(R.id.progress)
         englishchapter1.setOnClickListener{
-            val intent= Intent(this,echapter1::class.java)
+            val intent= Intent(this,echapter1viewpdf::class.java)
             startActivity(intent)
         }
         instructions1.setOnClickListener {

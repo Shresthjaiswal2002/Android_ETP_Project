@@ -21,20 +21,19 @@ class Hindi : AppCompatActivity() {
         bottom=findViewById(R.id.btm)
         progress=findViewById(R.id.progress)
         class1.setOnClickListener{
-            val intent= Intent(this,chapter1::class.java)
+            val intent= Intent(this,chapter1viewpdf::class.java)
             startActivity(intent)
         }
         instructions1.setOnClickListener {
-            val intent= Intent(this,hchapter3::class.java)
+            val intent= Intent(this,hchapter2viewpdf::class.java)
             startActivity(intent)
         }
         help.setOnClickListener {
-            val intent= Intent(this,hchapter2::class.java)
+            val intent= Intent(this,hchapter3viewpdf::class.java)
             startActivity(intent)
         }
         progress.setOnClickListener {
-            val intent= Intent(this, hchapter4
-            ::class.java)
+            val intent= Intent(this, hchapter4viewpdf ::class.java)
             startActivity(intent)
         }
         bottom.setOnItemSelectedListener {
